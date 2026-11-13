@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rasmdagi farqni top</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <div class="logo">✦ RASMDAGI FARQNI TOP</div>
+      <p class="subtitle">Ikki rasmni diqqat bilan solishtiring!</p>
+    </header>
+
+    <section class="stats">
+      <div class="stat">
+        <span>BOSQICH</span>
+        <strong id="level">1 / 30</strong>
+      </div>
+      <div class="stat">
+        <span>TOPILDI</span>
+        <strong id="found">0 / 3</strong>
+      </div>
+      <div class="stat">
+        <span>VAQT</span>
+        <strong id="timer">00:00</strong>
+      </div>
+    </section>
+
+    <section class="game-panel">
+      <div class="level-info">
+        <h2 id="levelTitle">1-bosqich</h2>
+        <p id="description">Rasmlar orasidagi farqlarni toping.</p>
+      </div>
+
+      <div class="progress">
+        <div id="progressFill"></div>
+      </div>
+
+      <div class="pictures">
+        <div class="picture-box">
+          <span>1-RASM</span>
+          <canvas id="picture1" width="480" height="320"></canvas>
+        </div>
+
+        <div class="picture-box">
+          <span>2-RASM</span>
+          <canvas id="picture2" width="480" height="320"></canvas>
+        </div>
+      </div>
+
+      <div class="message" id="message">
+        Farqlarni topish uchun rasmlardagi joylarni bosing.
+      </div>
+
+      <div class="controls">
+        <button id="hintBtn">✦ Yordam</button>
+        <button id="resetBtn">↻ Qayta boshlash</button>
+        <button id="nextBtn" disabled>Keyingi bosqich →</button>
+      </div>
+    </section>
+
+    <section class="instructions">
+      <h3>O‘yin qoidalari</h3>
+      <p>1. Ikkita rasmni diqqat bilan kuzating.</p>
+      <p>2. Bir-biridan farq qiladigan buyum yoki joyni bosing.</p>
+      <p>3. Barcha farqlarni topsangiz, keyingi bosqich ochiladi.</p>
+      <p>4. Yordam tugmasi topilmagan farqlardan birini ko‘rsatadi.</p>
+    </section>
+
+    <footer>
+      Loyiha muallifi:
+      <strong>AKRAMJONOVA JADRA MARATOVNA</strong>
+    </footer>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <div class="success-icon">🏆</div>
+      <h2 id="modalTitle">Barakalla!</h2>
+      <p id="modalText">Barcha farqlar topildi!</p>
+      <button id="modalBtn">Keyingi bosqich</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
